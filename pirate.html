@@ -32,6 +32,33 @@
             padding: 10px;
             text-align: left;
         }
+        .game-adda {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 5px auto;
+            width: 30%;
+         }
+         .location {
+            width: 65px;
+            height: 65px;
+            border: 1px solid #000;
+            background-color: #fff;
+            text-align: center;
+            background-image: url('./hiddentreasure.jpg');
+            background-size: cover;
+        }
+        .treasure {
+            background-image: url('./treasure.jpg'); 
+        }
+
+        .trap {
+            background-image: url('./trap_treasure.jpg');
+        }
+
+        .pirate {
+            background-image: url('./notreasure.jpg'); 
+        }
     </style>
 </head>
 <body>
@@ -49,7 +76,7 @@
         <p>Penalty is zero.</p>
     </div>
 
-    <div id="help">
+    <div>
         <p>Click for help.</p>
     </div>
 
@@ -58,20 +85,40 @@
         <p>- Remember to carefully analyze clues.</p>
         <p>- Avoid clicking on suspicious locations.</p>
     </div>
+    <div class="game-adda">
+   
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    </div>
 
-    <script>
-        // JavaScript code can be added here for interactivity.
-        // For example, you can make the "Click for help" text show/hide the help report.
-        var helpButton = document.getElementById("help");
-        var helpReport = document.getElementById("help-report");
 
-        helpButton.addEventListener("click", function() {
-            if (helpReport.style.display === "none") {
-                helpReport.style.display = "block";
-            } else {
-                helpReport.style.display = "none";
-            }
-        });
-    </script>
+    
 </body>
 </html>
