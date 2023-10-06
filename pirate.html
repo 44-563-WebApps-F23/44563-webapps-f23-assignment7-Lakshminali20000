@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find the Treasure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #instructions {
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        #locations, #penalty {
+            font-weight: bold;
+        }
+
+        #help {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #help-report {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find the treasure by Venkata Lakshmi Nali</h1>
+
+    <div id="instructions">
+        <p>Click on the locations to search for treasure, beware the traps</p>
+    </div>
+
+    <div id="locations">
+        <p>Number of locations checked is zero.</p>
+    </div>
+
+    <div id="penalty">
+        <p>Penalty is zero.</p>
+    </div>
+
+    <div id="help">
+        <p>Click for help.</p>
+    </div>
+
+    <div id="help-report">
+        <p>Help Report:</p>
+        <p>- Remember to carefully analyze clues.</p>
+        <p>- Avoid clicking on suspicious locations.</p>
+    </div>
+
+    <script>
+        // JavaScript code can be added here for interactivity.
+        // For example, you can make the "Click for help" text show/hide the help report.
+        var helpButton = document.getElementById("help");
+        var helpReport = document.getElementById("help-report");
+
+        helpButton.addEventListener("click", function() {
+            if (helpReport.style.display === "none") {
+                helpReport.style.display = "block";
+            } else {
+                helpReport.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
